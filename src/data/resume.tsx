@@ -13,15 +13,15 @@ import { Java } from "@/components/ui/svgs/java";
 import { Csharp } from "@/components/ui/svgs/csharp";
 
 export const DATA = {
-  name: "Dillion Verma",
-  initials: "DV",
-  url: "https://dillion.io",
-  location: "San Francisco, CA",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  name: "Firas Freajah",
+  initials: "FF",
+  url: "https://firasfreajah.com",
+  location: "NYC - CLT - Wherever I'm paid to be",
+  locationLink: "https://www.google.com/maps/place/newyork",
   description:
-    "Software Engineer turned Entrepreneur. I love building things and helping people. Very active on Twitter.",
+    "Tech Exec - About the biz. I love building things and helping people. Very active on Claude - AMA.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "At the end of 2015, I quit my job in Floriday to go fulltime into building and scaling in NYC. [competed in over 21 hackathons for fun](/#hackathons). I also had the displeasure of being a part of the bitcoin mining goldrush and got burned",
   avatarUrl: "/me.png",
   skills: [
     { name: "React", icon: ReactLight },
@@ -41,33 +41,33 @@ export const DATA = {
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
-    email: "hello@example.com",
-    tel: "+123456789",
+    email: "firasfreajah@gmail.com",
+    tel: "9176503344",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://github.com/epi-stem-ological",
         icon: Icons.github,
         navbar: true,
       },
 
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://www.linkedin.com/in/111freajah/",
         icon: Icons.linkedin,
 
         navbar: true,
       },
       X: {
         name: "X",
-        url: "https://dub.sh/dillion-twitter",
+        url: "https://x.com/Epistemo1ogical",
         icon: Icons.x,
 
         navbar: true,
       },
       Youtube: {
         name: "Youtube",
-        url: "https://dub.sh/dillion-youtube",
+        url: "https://www.youtube.com/@PalestinianBitcoiner",
         icon: Icons.youtube,
         navbar: true,
       },
@@ -83,7 +83,7 @@ export const DATA = {
 
   work: [
     {
-      company: "Atomic Finance",
+      company: "Alef Quant",
       href: "https://atomic.finance",
       badges: [],
       location: "Remote",
