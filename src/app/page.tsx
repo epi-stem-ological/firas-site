@@ -6,7 +6,6 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import ContactSection from "@/components/section/contact-section";
-import HackathonsSection from "@/components/section/hackathons-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
 import { ArrowUpRight } from "lucide-react";
@@ -113,14 +112,35 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="skills">
+      <section id="certifications">
         <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <h2 className="text-xl font-bold">Certifications</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-2">
+            {DATA.certifications.map((certification, id) => (
+              <BlurFade
+                key={certification}
+                delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+              >
+                <div className="border bg-background border-border ring-2 ring-border/20 rounded-xl min-h-8 w-fit px-4 py-1.5 flex items-center">
+                  <span className="text-foreground text-sm font-medium">
+                    {certification}
+                  </span>
+                </div>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <div className="flex min-h-0 flex-col gap-y-4">
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-2">
             {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+              <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
                 <div className="border bg-background border-border ring-2 ring-border/20 rounded-xl h-8 w-fit px-4 flex items-center gap-2">
                   {skill.icon && <skill.icon className="size-4 rounded overflow-hidden object-contain" />}
                   <span className="text-foreground text-sm font-medium">{skill.name}</span>
@@ -130,18 +150,34 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section id="languages">
+        <div className="flex min-h-0 flex-col gap-y-4">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <h2 className="text-xl font-bold">Languages</h2>
+          </BlurFade>
+          <div className="flex flex-wrap gap-2">
+            {DATA.languages.map((language, id) => (
+              <BlurFade
+                key={language}
+                delay={BLUR_FADE_DELAY * 14 + id * 0.05}
+              >
+                <div className="border bg-background border-border ring-2 ring-border/20 rounded-xl h-8 w-fit px-4 flex items-center">
+                  <span className="text-foreground text-sm font-medium">
+                    {language}
+                  </span>
+                </div>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
       <section id="projects">
-        <BlurFade delay={BLUR_FADE_DELAY * 11}>
+        <BlurFade delay={BLUR_FADE_DELAY * 15}>
           <ProjectsSection />
         </BlurFade>
       </section>
-      <section id="hackathons">
-        <BlurFade delay={BLUR_FADE_DELAY * 13}>
-          <HackathonsSection />
-        </BlurFade>
-      </section>
       <section id="contact">
-        <BlurFade delay={BLUR_FADE_DELAY * 16}>
+        <BlurFade delay={BLUR_FADE_DELAY * 17}>
           <ContactSection />
         </BlurFade>
       </section>
