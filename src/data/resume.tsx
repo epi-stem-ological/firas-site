@@ -22,7 +22,7 @@ export const DATA = {
     "Tech Exec - About the biz. I love building things and helping people. Very active on Claude - AMA.",
   summary:
     "At the end of 2015, I quit my job in Floriday to go fulltime into building and scaling in NYC. [competed in over 21 hackathons for fun](/#hackathons). I also had the displeasure of being a part of the bitcoin mining goldrush and got burned",
-  avatarUrl: "/me.png",
+  avatarUrl: "/me.jpg",
   skills: [
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
