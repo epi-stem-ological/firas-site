@@ -32,7 +32,31 @@ export const DATA = {
     "Technology solutions leader with PMP and CISSP credentials, focused on enterprise IT, AI adoption, cloud infrastructure, and event-critical operations.",
   summary:
     "I lead technology strategy and operations in complex enterprise environments, with a focus on reliable infrastructure, AI and automation governance, cloud modernization, service delivery, and revenue-aligned technology solutions. My work has included large-scale event technology, cybersecurity and cloud programs, executive stakeholder alignment, KPI-driven operations, and cross-functional delivery across IT, sales, finance, and operations.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/me.jpg",
+  impact: [
+    {
+      value: "$9M",
+      label: "annual growth from technology go-to-market strategy",
+    },
+    {
+      value: "15%",
+      label: "year-over-year revenue lift for technology solutions",
+    },
+    {
+      value: "100+",
+      label: "major events supported with resilient operations each year",
+    },
+    {
+      value: "$6M",
+      label: "annual IT budget managed across enterprise priorities",
+    },
+  ],
+  focusAreas: [
+    "Enterprise IT strategy",
+    "AI governance and adoption",
+    "Event-critical infrastructure",
+    "Cloud and cybersecurity programs",
+  ],
   skills: [
     { name: "Enterprise Technology Strategy", icon: Kubernetes },
     { name: "AI and Automation Governance", icon: Python },

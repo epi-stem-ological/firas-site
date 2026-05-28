@@ -57,10 +57,12 @@ export function ProjectCard({
   return (
     <div
       className={cn(
-        "flex flex-col h-full border border-border rounded-xl overflow-hidden hover:ring-2 cursor-pointer hover:ring-muted transition-all duration-200",
+        "group relative flex h-full flex-col overflow-hidden rounded-lg border border-border bg-background/80 shadow-sm backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-foreground/25 hover:shadow-2xl hover:shadow-foreground/10",
         className
       )}
     >
+      <div className="absolute inset-x-0 top-0 h-1 bg-linear-to-r from-emerald-400 via-cyan-400 to-amber-400 opacity-80" />
+      <div className="absolute inset-0 -z-10 bg-[linear-gradient(135deg,rgba(20,184,166,0.08),transparent_35%,rgba(245,158,11,0.08))] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
       {hasMedia && (
         <div className="relative shrink-0">
           {href ? (
@@ -118,33 +120,33 @@ export function ProjectCard({
           )}
         </div>
       )}
-      <div className="p-6 flex flex-col gap-3 flex-1">
+      <div className="p-6 flex flex-col gap-4 flex-1">
         <div className="flex items-start justify-between gap-2">
           <div className="flex flex-col gap-1">
-            <h3 className="font-semibold">{title}</h3>
-            <time className="text-xs text-muted-foreground">{dates}</time>
+            <h3 className="text-xl font-semibold tracking-tight">{title}</h3>
+            <time className="text-xs font-medium uppercase tracking-[0.14em] text-muted-foreground">{dates}</time>
           </div>
           {href && (
             <Link
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
+              className="rounded-lg border border-border bg-background p-2 text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
               aria-label={`Open ${title}`}
             >
               <ArrowUpRight className="h-4 w-4" aria-hidden />
             </Link>
           )}
         </div>
-        <div className="text-xs flex-1 prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
+        <div className="text-sm flex-1 prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
           <Markdown>{description}</Markdown>
         </div>
         {tags && tags.length > 0 && (
-          <div className="flex flex-wrap gap-1 mt-auto">
+          <div className="flex flex-wrap gap-1.5 mt-auto">
             {tags.map((tag) => (
               <Badge
                 key={tag}
-                className="text-[11px] font-medium border border-border h-6 w-fit px-2"
+                className="text-[11px] font-medium border border-border bg-background/80 h-6 w-fit px-2"
                 variant="outline"
               >
                 {tag}

@@ -4,15 +4,16 @@ import { DATA } from "@/data/resume";
 
 export default function ContactSection() {
   return (
-    <div className="border rounded-xl p-10 relative">
-      <div className="absolute -top-4 border bg-primary z-10 rounded-xl px-4 py-1 left-1/2 -translate-x-1/2">
+    <div className="relative overflow-hidden rounded-lg border border-border bg-background/80 p-8 shadow-2xl shadow-foreground/10 backdrop-blur sm:p-12">
+      <div className="absolute -top-px left-1/2 z-10 -translate-x-1/2 rounded-b-lg border border-t-0 bg-primary px-4 py-1">
         <span className="text-background text-sm font-medium">Contact</span>
       </div>
-      <div className="absolute inset-0 top-0 left-0 right-0 h-1/2 rounded-xl overflow-hidden">
+      <div className="absolute inset-x-0 top-0 h-1/2 overflow-hidden">
         <FlickeringGrid
           className="h-full w-full"
           squareSize={2}
           gridGap={2}
+          maxOpacity={0.16}
           style={{
             maskImage: "linear-gradient(to bottom, black, transparent)",
             WebkitMaskImage: "linear-gradient(to bottom, black, transparent)",

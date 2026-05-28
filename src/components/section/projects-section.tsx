@@ -7,7 +7,7 @@ const BLUR_FADE_DELAY = 0.04;
 export default function ProjectsSection() {
     return (
         <section id="projects">
-            <div className="flex min-h-0 flex-col gap-y-8">
+            <div className="flex min-h-0 flex-col gap-y-10">
                 <div className="flex flex-col gap-y-4 items-center justify-center">
                     <div className="flex items-center w-full">
                         <div
@@ -25,13 +25,19 @@ export default function ProjectsSection() {
                     <div className="flex flex-col gap-y-3 items-center justify-center">
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Check out my latest work</h2>
                         <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
-                            I work across enterprise IT, event-critical infrastructure,
-                            AI adoption, service delivery, and technology-enabled growth.
-                            Here are selected public highlights and ventures.
+                            I&apos;ve worked on a variety of projects, from simple
+                            websites to complex web applications. Here are a few of my
+                            favorites.
+                        </p>
+                        <p className="max-w-3xl text-balance text-center text-sm leading-6 text-muted-foreground">
+                            I&apos;m also highlighting the enterprise work that now defines
+                            my public profile: technology strategy, event-critical
+                            infrastructure, AI adoption, service delivery, and
+                            technology-enabled growth.
                         </p>
                     </div>
                 </div>
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto auto-rows-fr">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 max-w-5xl mx-auto auto-rows-fr">
                     {DATA.projects.map((project, id) => (
                         <BlurFade
                             key={project.title}

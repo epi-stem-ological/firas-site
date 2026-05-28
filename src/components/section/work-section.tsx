@@ -13,10 +13,19 @@ import { cn } from "@/lib/utils";
 
 function LogoImage({ src, alt }: { src: string; alt: string }) {
   const [imageError, setImageError] = useState(false);
+  const initials = alt
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((word) => word[0])
+    .join("")
+    .toUpperCase();
 
   if (!src || imageError) {
     return (
-      <div className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border bg-muted flex-none" />
+      <div className="flex size-10 flex-none items-center justify-center rounded-lg border border-border bg-background text-xs font-semibold shadow-sm ring-1 ring-border md:size-12">
+        {initials}
+      </div>
     );
   }
 
@@ -24,7 +33,7 @@ function LogoImage({ src, alt }: { src: string; alt: string }) {
     <img
       src={src}
       alt={alt}
-      className="size-8 md:size-10 p-1 border rounded-full shadow ring-2 ring-border overflow-hidden object-contain flex-none"
+      className="size-10 flex-none overflow-hidden rounded-lg border border-border object-contain p-1 shadow-sm ring-1 ring-border md:size-12"
       onError={() => setImageError(true)}
     />
   );
@@ -32,7 +41,7 @@ function LogoImage({ src, alt }: { src: string; alt: string }) {
 
 export default function WorkSection() {
   return (
-    <Accordion type="single" collapsible className="w-full grid gap-6">
+    <Accordion type="single" collapsible className="w-full grid gap-3">
       {DATA.work.map((work) => {
         const itemKey = `${work.company}-${work.title}-${work.start}`;
 
@@ -40,7 +49,7 @@ export default function WorkSection() {
           <AccordionItem
             key={itemKey}
             value={itemKey}
-            className="w-full border-b-0 grid gap-2"
+            className="w-full rounded-lg border border-border bg-background/70 p-3 transition-all duration-300 hover:border-foreground/25 hover:shadow-lg hover:shadow-foreground/5"
           >
             <AccordionTrigger className="hover:no-underline p-0 cursor-pointer transition-colors rounded-none group [&>svg]:hidden">
               <div className="flex items-center gap-x-3 justify-between w-full text-left">
@@ -70,17 +79,22 @@ export default function WorkSection() {
                     <div className="font-sans text-sm text-muted-foreground">
                       {work.title}
                     </div>
+                    <div className="text-xs tabular-nums text-muted-foreground sm:hidden">
+                      {work.start} - {work.end ?? "Present"}
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-center gap-1 text-xs tabular-nums text-muted-foreground text-right flex-none">
+                <div className="hidden items-center gap-1 text-right text-xs tabular-nums text-muted-foreground sm:flex sm:flex-none">
                   <span>
                     {work.start} - {work.end ?? "Present"}
                   </span>
                 </div>
               </div>
             </AccordionTrigger>
-            <AccordionContent className="p-0 ml-13 text-xs sm:text-sm text-muted-foreground">
-              {work.description}
+            <AccordionContent className="ml-0 p-0 pt-3 text-xs text-muted-foreground sm:ml-[60px] sm:text-sm">
+              <div className="border-t border-border pt-3 leading-6">
+                {work.description}
+              </div>
             </AccordionContent>
           </AccordionItem>
         );
