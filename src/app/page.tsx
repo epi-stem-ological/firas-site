@@ -42,10 +42,10 @@ export default function Page() {
             <BlurFade delay={BLUR_FADE_DELAY * 4}>
               <div className="grid min-w-0 gap-3 sm:flex sm:flex-row">
                 <Link
-                  href="#projects"
+                  href="#work-impact"
                   className="inline-flex h-12 w-full min-w-0 items-center justify-center gap-2 rounded-lg bg-foreground px-5 text-sm font-semibold text-background shadow-lg shadow-foreground/10 transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 sm:w-auto"
                 >
-                  Latest work
+                  Explore impact
                   <ArrowRight className="size-4" aria-hidden />
                 </Link>
                 <Link
@@ -277,13 +277,66 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="projects" className="scroll-mt-8">
+      <section id="work-impact" className="scroll-mt-8">
         <BlurFade delay={BLUR_FADE_DELAY * 15}>
           <ProjectsSection />
         </BlurFade>
       </section>
+      <section id="leadership" className="grid gap-6 lg:grid-cols-[0.7fr_1fr]">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
+              Leadership
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+              Building systems, trust, and capability at the same time.
+            </h2>
+          </BlurFade>
+        </div>
+        <div className="grid gap-3">
+          {DATA.leadership.map((item, id) => (
+            <BlurFade key={item.title} delay={BLUR_FADE_DELAY * 16 + id * 0.05}>
+              <div className="rounded-lg border border-border bg-background/75 p-5 shadow-sm backdrop-blur">
+                <h3 className="text-lg font-semibold tracking-tight">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-muted-foreground">
+                  {item.description}
+                </p>
+              </div>
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+      <section id="speaking" className="rounded-lg border border-border bg-background/75 p-6 shadow-sm backdrop-blur sm:p-8">
+        <div className="grid gap-6 lg:grid-cols-[0.8fr_1fr] lg:items-start">
+          <BlurFade delay={BLUR_FADE_DELAY * 17}>
+            <div>
+              <p className="text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
+                Speaking
+              </p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">
+                Topics for executive, technical, and cross-functional audiences.
+              </h2>
+              <p className="mt-4 text-sm leading-6 text-muted-foreground">
+                Available for presentations, panels, workshops, and internal
+                enablement sessions when the audience and goals are clearly defined.
+              </p>
+            </div>
+          </BlurFade>
+          <div className="flex flex-wrap gap-2">
+            {DATA.speakingTopics.map((topic, id) => (
+              <BlurFade key={topic} delay={BLUR_FADE_DELAY * 18 + id * 0.05}>
+                <div className="rounded-lg border border-border bg-background px-4 py-2 text-sm font-medium">
+                  {topic}
+                </div>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
       <section id="contact">
-        <BlurFade delay={BLUR_FADE_DELAY * 17}>
+        <BlurFade delay={BLUR_FADE_DELAY * 19}>
           <ContactSection />
         </BlurFade>
       </section>

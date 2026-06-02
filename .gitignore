@@ -34,6 +34,13 @@ yarn-error.log*
 # vercel
 .vercel
 
+# private proof and claims evidence
+docs/private/
+*.private.md
+proof-ledger.local.md
+claims-evidence.local.md
+.proof/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

@@ -23,10 +23,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
   title: {
-    default: DATA.name,
+    default: `${DATA.name} | Technology Leadership and AI Adoption`,
     template: `%s | ${DATA.name}`,
   },
-  description: DATA.description,
+  description:
+    "Firas Freajah is a technology solutions leader focused on enterprise IT, event-critical operations, practical AI adoption, cybersecurity, cloud infrastructure, and cross-functional execution.",
   applicationName: DATA.name,
   authors: [{ name: DATA.name, url: DATA.url }],
   creator: DATA.name,
@@ -46,8 +47,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: `${DATA.name}`,
-    description: DATA.description,
+    title: `${DATA.name} | Technology Leadership and AI Adoption`,
+    description:
+      "A public home for Firas Freajah's work across enterprise technology, operations, revenue enablement, AI adoption, and leadership.",
     url: DATA.url,
     siteName: `${DATA.name}`,
     locale: "en_US",
@@ -65,7 +67,9 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.name}`,
+    title: `${DATA.name} | Technology Leadership and AI Adoption`,
+    description:
+      "Enterprise technology, operations, AI adoption, revenue enablement, and leadership.",
     card: "summary_large_image",
   },
   verification: {
@@ -79,8 +83,42 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const personJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: DATA.name,
+    url: DATA.url,
+    image: new URL(DATA.avatarUrl, DATA.url).toString(),
+    jobTitle: "Technology solutions leader",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "New York",
+      addressRegion: "NY",
+      addressCountry: "US",
+    },
+    knowsAbout: [
+      "Enterprise IT",
+      "Technology operations",
+      "AI adoption",
+      "Cloud infrastructure",
+      "Cybersecurity",
+      "Event technology",
+      "Technology leadership",
+    ],
+    sameAs: Object.values(DATA.contact.social)
+      .filter((social) => social.url.startsWith("http"))
+      .map((social) => social.url),
+  };
+
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased relative overflow-x-hidden",

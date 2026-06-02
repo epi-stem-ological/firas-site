@@ -6,7 +6,7 @@ const BLUR_FADE_DELAY = 0.04;
 
 export default function ProjectsSection() {
     return (
-        <section id="projects">
+        <div>
             <div className="flex min-h-0 flex-col gap-y-10">
                 <div className="flex flex-col gap-y-4 items-center justify-center">
                     <div className="flex items-center w-full">
@@ -15,7 +15,7 @@ export default function ProjectsSection() {
 
                         />
                         <div className="border bg-primary z-10 rounded-xl px-4 py-1">
-                            <span className="text-background text-sm font-medium">My Projects</span>
+                            <span className="text-background text-sm font-medium">Work and Impact</span>
                         </div>
                         <div
                             className="flex-1 h-px bg-linear-to-l from-transparent from-5% via-border via-95% to-transparent"
@@ -23,17 +23,15 @@ export default function ProjectsSection() {
                         />
                     </div>
                     <div className="flex flex-col gap-y-3 items-center justify-center">
-                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Check out my latest work</h2>
-                        <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
-                            I&apos;ve worked on a variety of projects, from simple
-                            websites to complex web applications. Here are a few of my
-                            favorites.
+                        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Body of work</h2>
+                        <p className="max-w-3xl text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
+                            A public-safe view of the operating domains that define my work:
+                            resilient infrastructure, enterprise service delivery, revenue
+                            enablement, practical AI adoption, and cross-functional leadership.
                         </p>
                         <p className="max-w-3xl text-balance text-center text-sm leading-6 text-muted-foreground">
-                            I&apos;m also highlighting the enterprise work that now defines
-                            my public profile: technology strategy, event-critical
-                            infrastructure, AI adoption, service delivery, and
-                            technology-enabled growth.
+                            Future case studies can add deeper detail after public-safety
+                            review.
                         </p>
                     </div>
                 </div>
@@ -59,7 +57,7 @@ export default function ProjectsSection() {
                     ))}
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 

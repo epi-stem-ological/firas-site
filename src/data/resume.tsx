@@ -1,5 +1,11 @@
 import { Icons } from "@/components/icons";
-import { BriefcaseBusiness, HomeIcon, MailIcon } from "lucide-react";
+import {
+  BriefcaseBusiness,
+  HomeIcon,
+  MailIcon,
+  Mic2Icon,
+  UsersIcon,
+} from "lucide-react";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
 import { Nodejs } from "@/components/ui/svgs/nodejs";
@@ -29,26 +35,26 @@ export const DATA = {
   location: "New York, NY",
   locationLink: "https://www.google.com/maps/place/New+York,+NY",
   description:
-    "Technology solutions leader with PMP and CISSP credentials, focused on enterprise IT, AI adoption, cloud infrastructure, and event-critical operations.",
+    "Technology solutions leader with PMP certification and practical experience across enterprise IT, cybersecurity, AI adoption, cloud infrastructure, and event-critical operations.",
   summary:
     "I lead technology strategy and operations in complex enterprise environments, with a focus on reliable infrastructure, AI and automation governance, cloud modernization, service delivery, and revenue-aligned technology solutions. My work has included large-scale event technology, cybersecurity and cloud programs, executive stakeholder alignment, KPI-driven operations, and cross-functional delivery across IT, sales, finance, and operations.",
   avatarUrl: "/me.jpg",
   impact: [
     {
-      value: "$9M",
-      label: "annual growth from technology go-to-market strategy",
+      value: "Revenue",
+      label: "Technology strategy for client-facing services and business growth",
     },
     {
-      value: "15%",
-      label: "year-over-year revenue lift for technology solutions",
+      value: "AI",
+      label: "Practical adoption, governance, enablement, and workflow redesign",
     },
     {
-      value: "100+",
-      label: "major events supported with resilient operations each year",
+      value: "Ops",
+      label: "Reliable systems for high-pressure, public-facing environments",
     },
     {
-      value: "$6M",
-      label: "annual IT budget managed across enterprise priorities",
+      value: "Teams",
+      label: "Cross-functional execution across technical and business stakeholders",
     },
   ],
   focusAreas: [
@@ -73,13 +79,12 @@ export const DATA = {
   ],
   certifications: [
     "Project Management Professional (PMP) - active through July 2026",
-    "Certified Information Systems Security Professional (CISSP)",
-    "Cisco Certified Network Associate (CCNA)",
-    "CompTIA Security+",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/#work", icon: BriefcaseBusiness, label: "Work" },
+    { href: "/#work-impact", icon: BriefcaseBusiness, label: "Work / Impact" },
+    { href: "/#leadership", icon: UsersIcon, label: "Leadership" },
+    { href: "/#speaking", icon: Mic2Icon, label: "Speaking" },
     { href: "/#contact", icon: MailIcon, label: "Contact" },
   ],
   contact: {
@@ -118,12 +123,12 @@ export const DATA = {
       href: "https://javitscenter.com",
       badges: [],
       location: "New York, NY",
-      title: "Director of Technology Solutions",
+      title: "Technology Solutions Leadership",
       logoUrl: "",
       start: "Jan 2024",
       end: "Present",
       description:
-        "Leading in-house and guest-facing technology systems across infrastructure, applications, technology sales, support operations, data governance, and emerging AI tools. Delivered a 15% year-over-year revenue increase, approximately $9M in annual growth, through new go-to-market strategies for IT solutions in partnership with executive leadership.",
+        "Leading in-house and guest-facing technology systems across infrastructure, applications, technology sales, support operations, data governance, and emerging AI tools. Partners with executive leadership to connect technology strategy with operational reliability, service quality, and revenue-generating technology solutions.",
     },
     {
       company: "Thrive Networks, Inc.",
@@ -147,7 +152,7 @@ export const DATA = {
       start: "Sept 2018",
       end: "Nov 2023",
       description:
-        "Managed cross-departmental IT programs aligned with sales and operational goals, producing a 20% customer satisfaction improvement. Managed a $6M annual IT budget, improved policies and procedures, and mobilized teams and systems for 100+ major events each year.",
+        "Managed cross-departmental IT programs aligned with sales and operational goals. Strengthened policies, procedures, budget discipline, customer-facing service maturity, and the technology support model for major event operations.",
     },
     {
       company: "Jacob K. Javits Convention Center",
@@ -159,7 +164,7 @@ export const DATA = {
       start: "Sept 2015",
       end: "Sept 2018",
       description:
-        "Designed and deployed Cisco-based network infrastructure, served as a senior escalation point for complex network issues, and partnered with sales and project management teams on tailored technology solutions that contributed to a 25% increase in project win rates.",
+        "Designed and deployed Cisco-based network infrastructure, served as a senior escalation point for complex network issues, and partnered with sales and project management teams on tailored technology solutions for client-facing delivery.",
     },
   ],
   education: [
@@ -223,7 +228,7 @@ export const DATA = {
       dates: "Public venture",
       active: true,
       description:
-        "Co-founder focused on operational performance and service delivery across managed IT support, network connectivity, systems integration, and AI-enabled business growth.",
+        "Public venture connected to managed IT support, network connectivity, systems integration, and AI-enabled business growth.",
       technologies: ["Managed IT", "Network Connectivity", "Systems Integration", "AI"],
       links: [
         {
@@ -235,6 +240,30 @@ export const DATA = {
       image: "",
       video: "",
     },
+  ],
+  leadership: [
+    {
+      title: "Service and accountability",
+      description:
+        "Build trust by making ownership clear, communicating tradeoffs early, and keeping teams focused on the people and operations the technology supports.",
+    },
+    {
+      title: "Cross-functional translation",
+      description:
+        "Translate between technical teams, executives, operations, vendors, and customer-facing groups so decisions are easier to make and easier to execute.",
+    },
+    {
+      title: "Capability building",
+      description:
+        "Create repeatable practices, clearer expectations, and learning paths so teams get stronger after each project, incident, and operational cycle.",
+    },
+  ],
+  speakingTopics: [
+    "AI adoption without hype",
+    "Technology as a revenue enabler",
+    "Building IT operations that executives trust",
+    "Translating technical complexity for business decisions",
+    "Developing emerging leaders inside technical teams",
   ],
   languages: ["English", "Spanish", "Arabic"],
   hackathons: [] as Hackathon[],
