@@ -1,14 +1,9 @@
 "use client";
 
-import { site } from "@/data/site";
+import { nav, site } from "@/data/site";
 import { useState } from "react";
 
-const links = [
-  { href: "#impact", label: "Impact" },
-  { href: "#beliefs", label: "Point of view" },
-  { href: "#speaking", label: "Speaking" },
-  { href: "#bio", label: "Bio" },
-];
+const links = nav;
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);

@@ -36,13 +36,7 @@ export const metadata: Metadata = {
   authors: [{ name: site.name, url: site.url }],
   creator: site.name,
   publisher: site.name,
-  keywords: [
-    "Firas Freajah",
-    "technology executive",
-    "AI governance",
-    "technology leadership",
-    "live events",
-  ],
+  keywords: ["Firas Freajah"],
   alternates: {
     canonical: "/",
   },

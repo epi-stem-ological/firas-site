@@ -1,14 +1,9 @@
 import { MobileNav } from "@/components/mobile-nav";
 import { ModeToggle } from "@/components/mode-toggle";
-import { site } from "@/data/site";
+import { nav, site } from "@/data/site";
 import Link from "next/link";
 
-const links = [
-  { href: "#impact", label: "Impact" },
-  { href: "#beliefs", label: "Point of view" },
-  { href: "#speaking", label: "Speaking" },
-  { href: "#bio", label: "Bio" },
-];
+const links = nav;
 
 function NavLinks({ className }: { className?: string }) {
   return (
