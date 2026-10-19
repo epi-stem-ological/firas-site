@@ -25,8 +25,8 @@ export const DATA = {
   avatarUrl: "/me.jpg",
   impact: [
     {
-      value: "$9M",
-      label: "annual growth from technology go-to-market strategy",
+      value: "20%",
+      label: "customer satisfaction improvement",
     },
     {
       value: "15%",
@@ -34,7 +34,7 @@ export const DATA = {
     },
     {
       value: "100+",
-      label: "major events supported with resilient operations each year",
+      label: "large-scale, high-visibility operations supported each year",
     },
     {
       value: "10+",
@@ -59,7 +59,7 @@ export const DATA = {
   ],
   certifications: [
     "Certified Information Systems Security Professional (CISSP)",
-    "Cisco Certified Network Associate (CCNA)",
+    "CCNA",
     "CompTIA Security+",
   ],
   navbar: [
@@ -88,7 +88,7 @@ export const DATA = {
       start: "Jan 2024",
       end: "Present",
       description:
-        "Leading in-house and guest-facing technology systems across infrastructure, applications, technology sales, support operations, data governance, and emerging AI tools. Delivered a 15% year-over-year revenue increase, approximately $9M in annual growth, through new go-to-market strategies for IT solutions in partnership with executive leadership.",
+        "Leading in-house and guest-facing technology systems across infrastructure, applications, technology sales, support operations, data governance, and emerging AI tools. Delivered a 15% year-over-year revenue increase through new go-to-market strategies for IT solutions in partnership with executive leadership.",
     },
     {
       company: "Thrive Networks, Inc.",
@@ -110,7 +110,7 @@ export const DATA = {
       start: "Sept 2018",
       end: "Nov 2023",
       description:
-        "Managed cross-departmental IT programs aligned with sales and operational goals, producing a 20% customer satisfaction improvement. Improved policies and procedures, and mobilized teams and systems for 100+ major events each year.",
+        "Managed cross-departmental IT programs aligned with sales and operational goals, producing a 20% customer satisfaction improvement. Improved policies and procedures, and mobilized teams and systems.",
     },
     {
       company: "Jacob K. Javits Convention Center",
@@ -121,7 +121,7 @@ export const DATA = {
       start: "Sept 2015",
       end: "Sept 2018",
       description:
-        "Supported business and marketing for event technology services, partnering with sales and project teams on tailored solutions that contributed to a 25% increase in project win rates.",
+        "Supported business and marketing for technology services, partnering with sales and project teams on tailored solutions that contributed to a 25% increase in project win rates.",
     },
   ],
   education: [
