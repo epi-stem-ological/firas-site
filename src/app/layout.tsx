@@ -39,7 +39,6 @@ export const metadata: Metadata = {
     "technology solutions",
     "cloud infrastructure",
     "cybersecurity",
-    "event technology",
     "technology leadership",
   ],
   alternates: {

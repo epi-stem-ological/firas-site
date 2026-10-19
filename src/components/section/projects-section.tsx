@@ -26,7 +26,7 @@ export default function ProjectsSection() {
                         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Selected impact</h2>
                         <p className="max-w-3xl text-balance text-center text-sm leading-6 text-muted-foreground">
                             Enterprise work that defines this profile: technology strategy,
-                            event-critical infrastructure, AI adoption, service delivery, and
+                            reliable infrastructure, AI adoption, service delivery, and
                             technology-enabled growth.
                         </p>
                     </div>

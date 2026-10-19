@@ -5,7 +5,6 @@ import type { ReactNode } from "react";
 type Hackathon = {
   title: string;
   dates: string;
-  location: string;
   description: string;
   image?: string;
   links?: readonly {
@@ -19,12 +18,10 @@ export const DATA = {
   name: "Firas Freajah",
   initials: "FF",
   url: "https://firasfreajah.com",
-  location: "New York, NY",
-  locationLink: "https://www.google.com/maps/place/New+York,+NY",
   description:
-    "Technology solutions leader with CISSP credentials, focused on enterprise IT, AI adoption, cloud infrastructure, and event-critical operations.",
+    "Technology solutions leader with CISSP credentials, focused on enterprise IT, AI adoption, cloud infrastructure, and results that hold up after launch.",
   summary:
-    "I lead technology strategy and operations in complex enterprise environments, with a focus on reliable infrastructure, AI and automation governance, cloud modernization, service delivery, and revenue-aligned technology solutions. My work has included large-scale event technology, cybersecurity and cloud programs, executive stakeholder alignment, KPI-driven operations, and cross-functional delivery across IT, sales, finance, and operations.",
+    "I lead technology strategy and operations in complex enterprise environments, with a focus on reliable infrastructure, AI and automation governance, cloud modernization, service delivery, and revenue-aligned technology solutions. My work has included programs that improved reliability and business results, cybersecurity and cloud programs, executive stakeholder alignment, KPI-driven delivery, and cross-functional work across IT, sales, finance, and operations.",
   avatarUrl: "/me.jpg",
   impact: [
     {
@@ -47,7 +44,7 @@ export const DATA = {
   focusAreas: [
     "Enterprise IT strategy",
     "AI governance and adoption",
-    "Event-critical infrastructure",
+    "Reliable infrastructure outcomes",
     "Cloud and cybersecurity programs",
   ],
   skills: [
@@ -86,7 +83,6 @@ export const DATA = {
       company: "Jacob K. Javits Convention Center",
       href: "https://javitscenter.com",
       badges: [],
-      location: "New York, NY",
       title: "Senior Director of Technology Solutions",
       logoUrl: "",
       start: "Jan 2024",
@@ -98,7 +94,6 @@ export const DATA = {
       company: "Thrive Networks, Inc.",
       href: "https://thrivenetworks.com",
       badges: [],
-      location: "New York, NY",
       title: "Senior Project Manager",
       logoUrl: "",
       start: "Nov 2022",
@@ -110,7 +105,6 @@ export const DATA = {
       company: "Jacob K. Javits Convention Center",
       href: "https://javitscenter.com",
       badges: [],
-      location: "New York, NY",
       title: "Manager of IT & Enterprise Project Manager",
       logoUrl: "",
       start: "Sept 2018",
@@ -122,13 +116,12 @@ export const DATA = {
       company: "Jacob K. Javits Convention Center",
       href: "https://javitscenter.com",
       badges: [],
-      location: "New York, NY",
-      title: "Network Engineer & Technology Solutions Business Analyst",
+      title: "Business & Marketing Analyst, Technology Solutions",
       logoUrl: "",
       start: "Sept 2015",
       end: "Sept 2018",
       description:
-        "Designed and deployed Cisco-based network infrastructure, served as a senior escalation point for complex network issues, and partnered with sales and project management teams on tailored technology solutions that contributed to a 25% increase in project win rates.",
+        "Supported business and marketing for event technology services, partnering with sales and project teams on tailored solutions that contributed to a 25% increase in project win rates.",
     },
   ],
   education: [
@@ -175,12 +168,12 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Event-Critical Infrastructure",
+      title: "Reliable infrastructure outcomes",
       href: "",
-      dates: "Large-scale operations",
+      dates: "Business results",
       active: true,
       description:
-        "Oversees resilient infrastructure and support processes for high-demand convention center operations, including staff, exhibitors, attendees, partners, and revenue-generating technology services.",
+        "Turns infrastructure investment into dependable service and technology offerings that contribute to revenue.",
       technologies: ["Reliability", "Infrastructure", "Operations"],
       links: [],
       image: "",

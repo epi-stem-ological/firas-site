@@ -46,9 +46,6 @@ export default function HackathonsSection() {
                 {hackathon.title && (
                   <h3 className="font-semibold leading-none">{hackathon.title}</h3>
                 )}
-                {hackathon.location && (
-                  <p className="text-sm text-muted-foreground">{hackathon.location}</p>
-                )}
                 {hackathon.description && (
                   <p className="text-sm text-muted-foreground leading-relaxed wrap-break-word">
                     {hackathon.description}
