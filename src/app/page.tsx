@@ -1,6 +1,4 @@
-import { InquiryForm } from "@/components/inquiry-form";
-import { UpdatesSignup } from "@/components/updates-signup";
-import { about, contact, inquiries, site, speaking, updates } from "@/data/site";
+import { about, contact, site, speaking } from "@/data/site";
 import { cn } from "@/lib/utils";
 
 function ExternalLink({
@@ -41,13 +39,16 @@ function InquiryLink({ variant }: { variant: "outline" | "stage" }) {
 
   return (
     <a
-      href="#inquiries"
+      href={site.linkedin}
+      target="_blank"
+      rel="noopener noreferrer"
       className={cn(
         "inline-flex min-h-12 w-full items-center justify-center rounded-full px-6 text-sm font-semibold tracking-wide transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 sm:w-auto",
         styles
       )}
     >
       {contact.secondary}
+      <span className="sr-only"> (opens in a new tab)</span>
     </a>
   );
 }
@@ -137,29 +138,12 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="inquiries" className="reveal scroll-mt-24">
-        <div className="max-w-2xl">
-          <h2 className="font-display text-5xl leading-[0.92] tracking-tight sm:text-6xl">
-            {inquiries.heading}
-          </h2>
-          <p className="mt-4 text-lg leading-8 text-muted-foreground">{inquiries.intro}</p>
-        </div>
-        <InquiryForm />
-      </section>
-
-      <section id="updates" className="reveal scroll-mt-24 border-t border-border pt-12">
-        <p className="max-w-2xl font-display text-4xl leading-tight tracking-tight sm:text-5xl">
-          {updates.blurb}
-        </p>
-        <UpdatesSignup />
-      </section>
-
       <section id="contact" className="reveal scroll-mt-24 grid gap-8 border-t border-border pt-12 lg:grid-cols-[0.8fr_1.2fr]">
         <h2 className="font-display text-5xl leading-none tracking-tight sm:text-6xl">{contact.heading}</h2>
         <div className="flex max-w-2xl flex-col gap-6">
           <p className="text-lg leading-8">{contact.body}</p>
           <p className="text-base leading-7 text-muted-foreground">
-            {contact.linkedinNote} {contact.formNote}
+            {contact.formNote}
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <ExternalLink href={site.linkedin} variant="solid">

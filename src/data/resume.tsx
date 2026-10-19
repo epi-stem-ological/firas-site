@@ -32,7 +32,7 @@ export const DATA = {
       label: "confirmed figure for year-over-year revenue lift for technology solutions",
     },
     {
-      value: "100+",
+      value: "160+",
       label: "large-scale, high-visibility operations supported each year",
     },
     {
