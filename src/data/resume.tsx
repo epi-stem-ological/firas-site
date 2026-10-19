@@ -19,7 +19,7 @@ export const DATA = {
   initials: "FF",
   url: "https://firasfreajah.com",
   description:
-    "Technology solutions leader with CISSP credentials, focused on enterprise IT, AI adoption, cloud infrastructure, and results that hold up after launch.",
+    "Technology executive for one of the busiest convention centers in the US. Live events at scale, AI adoption and governance, and business results.",
   summary:
     "I lead technology strategy and operations in complex enterprise environments, with a focus on reliable infrastructure, AI and automation governance, cloud modernization, service delivery, and revenue-aligned technology solutions. My work has included programs that improved reliability and business results, cybersecurity and cloud programs, executive stakeholder alignment, KPI-driven delivery, and cross-functional work across IT, sales, finance, and operations.",
   avatarUrl: "/me.jpg",
@@ -29,8 +29,8 @@ export const DATA = {
       label: "customer satisfaction improvement",
     },
     {
-      value: "15%",
-      label: "year-over-year revenue lift for technology solutions",
+      value: "TODO",
+      label: "confirmed figure for year-over-year revenue lift for technology solutions",
     },
     {
       value: "100+",
