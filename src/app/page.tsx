@@ -245,10 +245,9 @@ export default function Page() {
           </BlurFade>
           <div className="mt-5 flex flex-wrap gap-2">
             {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
-                <div className="flex h-8 w-fit items-center gap-2 rounded-lg border border-border bg-background px-4">
-                  {skill.icon && <skill.icon className="size-4 rounded overflow-hidden object-contain" />}
-                  <span className="text-foreground text-sm font-medium">{skill.name}</span>
+              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 12 + id * 0.05}>
+                <div className="flex h-8 w-fit items-center rounded-lg border border-border bg-background px-4">
+                  <span className="text-foreground text-sm font-medium">{skill}</span>
                 </div>
               </BlurFade>
             ))}

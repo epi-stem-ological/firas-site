@@ -1,12 +1,5 @@
 import { Icons } from "@/components/icons";
 import { BriefcaseBusiness, HomeIcon, MailIcon } from "lucide-react";
-import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
-import { Typescript } from "@/components/ui/svgs/typescript";
-import { Nodejs } from "@/components/ui/svgs/nodejs";
-import { Python } from "@/components/ui/svgs/python";
-import { Postgresql } from "@/components/ui/svgs/postgresql";
-import { Docker } from "@/components/ui/svgs/docker";
-import { Kubernetes } from "@/components/ui/svgs/kubernetes";
 import type { ReactNode } from "react";
 
 type Hackathon = {
@@ -29,7 +22,7 @@ export const DATA = {
   location: "New York, NY",
   locationLink: "https://www.google.com/maps/place/New+York,+NY",
   description:
-    "Technology solutions leader with PMP and CISSP credentials, focused on enterprise IT, AI adoption, cloud infrastructure, and event-critical operations.",
+    "Technology solutions leader with CISSP credentials, focused on enterprise IT, AI adoption, cloud infrastructure, and event-critical operations.",
   summary:
     "I lead technology strategy and operations in complex enterprise environments, with a focus on reliable infrastructure, AI and automation governance, cloud modernization, service delivery, and revenue-aligned technology solutions. My work has included large-scale event technology, cybersecurity and cloud programs, executive stakeholder alignment, KPI-driven operations, and cross-functional delivery across IT, sales, finance, and operations.",
   avatarUrl: "/me.jpg",
@@ -47,8 +40,8 @@ export const DATA = {
       label: "major events supported with resilient operations each year",
     },
     {
-      value: "$6M",
-      label: "annual IT budget managed across enterprise priorities",
+      value: "10+",
+      label: "years leading enterprise technology",
     },
   ],
   focusAreas: [
@@ -58,21 +51,16 @@ export const DATA = {
     "Cloud and cybersecurity programs",
   ],
   skills: [
-    { name: "Enterprise Technology Strategy", icon: Kubernetes },
-    { name: "AI and Automation Governance", icon: Python },
-    { name: "Cloud Migrations", icon: Docker },
-    { name: "Cisco ACI / SD-WAN", icon: Kubernetes },
-    { name: "Nutanix / VMware", icon: Docker },
-    { name: "Microsoft Azure", icon: NextjsIconDark },
-    { name: "AWS", icon: Nodejs },
-    { name: "Microsoft 365", icon: Typescript },
-    { name: "Data Governance", icon: Postgresql },
-    { name: "Cybersecurity", icon: Kubernetes },
-    { name: "Python", icon: Python },
-    { name: "Project Delivery", icon: Typescript },
+    "Enterprise technology strategy",
+    "AI adoption and governance",
+    "Hybrid cloud and modernization",
+    "Network and infrastructure resilience",
+    "Cybersecurity and risk",
+    "Data governance",
+    "Revenue-generating technology services",
+    "Portfolio and change management",
   ],
   certifications: [
-    "Project Management Professional (PMP) - active through July 2026",
     "Certified Information Systems Security Professional (CISSP)",
     "Cisco Certified Network Associate (CCNA)",
     "CompTIA Security+",
@@ -83,32 +71,13 @@ export const DATA = {
     { href: "/#contact", icon: MailIcon, label: "Contact" },
   ],
   contact: {
-    email: "firasfreajah@gmail.com",
     tel: "",
     social: {
-      GitHub: {
-        name: "GitHub",
-        url: "https://github.com/epi-stem-ological",
-        icon: Icons.github,
-        navbar: true,
-      },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/111freajah/",
         icon: Icons.linkedin,
         navbar: true,
-      },
-      X: {
-        name: "X",
-        url: "https://x.com/Epistemo1ogical",
-        icon: Icons.x,
-        navbar: true,
-      },
-      email: {
-        name: "Email",
-        url: "mailto:firasfreajah@gmail.com",
-        icon: Icons.email,
-        navbar: false,
       },
     },
   },
@@ -118,7 +87,7 @@ export const DATA = {
       href: "https://javitscenter.com",
       badges: [],
       location: "New York, NY",
-      title: "Director of Technology Solutions",
+      title: "Senior Director of Technology Solutions",
       logoUrl: "",
       start: "Jan 2024",
       end: "Present",
@@ -147,7 +116,7 @@ export const DATA = {
       start: "Sept 2018",
       end: "Nov 2023",
       description:
-        "Managed cross-departmental IT programs aligned with sales and operational goals, producing a 20% customer satisfaction improvement. Managed a $6M annual IT budget, improved policies and procedures, and mobilized teams and systems for 100+ major events each year.",
+        "Managed cross-departmental IT programs aligned with sales and operational goals, producing a 20% customer satisfaction improvement. Improved policies and procedures, and mobilized teams and systems for 100+ major events each year.",
     },
     {
       company: "Jacob K. Javits Convention Center",
@@ -200,7 +169,7 @@ export const DATA = {
       active: true,
       description:
         "Leads practical AI adoption with governance, prioritization, training, and use cases that improve productivity, customer experience, and operational responsiveness.",
-      technologies: ["Microsoft Copilot", "OpenAI", "Governance", "Training"],
+      technologies: ["Governance", "Training"],
       links: [],
       image: "",
       video: "",
@@ -212,26 +181,8 @@ export const DATA = {
       active: true,
       description:
         "Oversees resilient infrastructure and support processes for high-demand convention center operations, including staff, exhibitors, attendees, partners, and revenue-generating technology services.",
-      technologies: ["Cisco", "SD-WAN", "ACI", "Reliability"],
+      technologies: ["Reliability", "Infrastructure", "Operations"],
       links: [],
-      image: "",
-      video: "",
-    },
-    {
-      title: "Abersal",
-      href: "https://www.abersal.com/",
-      dates: "Public venture",
-      active: true,
-      description:
-        "Co-founder focused on operational performance and service delivery across managed IT support, network connectivity, systems integration, and AI-enabled business growth.",
-      technologies: ["Managed IT", "Network Connectivity", "Systems Integration", "AI"],
-      links: [
-        {
-          type: "Website",
-          href: "https://www.abersal.com/",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
       image: "",
       video: "",
     },
