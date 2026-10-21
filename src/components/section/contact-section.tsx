@@ -25,14 +25,7 @@ export default function ContactSection() {
           Get in touch
         </h2>
         <p className="mx-auto max-w-lg text-muted-foreground text-balance">
-          The most reliable paths are{" "}
-          <Link
-            href={DATA.contact.social.email.url}
-            className="text-blue-500 hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
-          >
-            email
-          </Link>{" "}
-          or{" "}
+          The most reliable path is{" "}
           <Link
             href={DATA.contact.social.LinkedIn.url}
             target="_blank"
