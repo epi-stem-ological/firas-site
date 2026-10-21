@@ -1,9 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
-
+import { readFile } from "node:fs/promises";
 import { ImageResponse } from "next/og";
 import { site } from "@/data/site";
-
-export const runtime = "edge";
 
 export const alt = site.name;
 export const size = {
@@ -15,12 +12,8 @@ export const contentType = "image/png";
 const getFontData = async () => {
     try {
         const [cabinetGrotesk, clashDisplay] = await Promise.all([
-            fetch(
-                new URL("../../public/fonts/CabinetGrotesk-Medium.ttf", import.meta.url)
-            ).then((res) => res.arrayBuffer()),
-            fetch(
-                new URL("../../public/fonts/ClashDisplay-Semibold.ttf", import.meta.url)
-            ).then((res) => res.arrayBuffer()),
+            readFile(new URL("../../public/fonts/CabinetGrotesk-Medium.ttf", import.meta.url)),
+            readFile(new URL("../../public/fonts/ClashDisplay-Semibold.ttf", import.meta.url)),
         ]);
         return { cabinetGrotesk, clashDisplay };
     } catch (error) {
