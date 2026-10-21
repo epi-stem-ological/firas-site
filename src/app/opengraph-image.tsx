@@ -1,9 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
-
 import { ImageResponse } from "next/og";
 import { site } from "@/data/site";
-
-export const runtime = "edge";
 
 export const alt = site.name;
 export const size = {

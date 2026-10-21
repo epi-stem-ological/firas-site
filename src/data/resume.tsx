@@ -24,14 +24,6 @@ export const DATA = {
   avatarUrl: "/me.jpg",
   impact: [
     {
-      value: "20%",
-      label: "customer satisfaction improvement",
-    },
-    {
-      value: "TODO",
-      label: "confirmed figure for year-over-year revenue lift for technology solutions",
-    },
-    {
       value: "160+",
       label: "large-scale, high-visibility operations supported each year",
     },
@@ -83,7 +75,7 @@ export const DATA = {
       start: "Jan 2024",
       end: "Present",
       description:
-        "Leading in-house and guest-facing technology systems across infrastructure, applications, technology sales, support operations, data governance, and emerging AI tools. Delivered a 15% year-over-year revenue increase through new go-to-market strategies for IT solutions in partnership with executive leadership.",
+        "Leading in-house and guest-facing technology systems across infrastructure, applications, technology sales, support operations, data governance, and emerging AI tools.",
     },
     {
       company: "Thrive Networks, Inc.",
@@ -105,7 +97,7 @@ export const DATA = {
       start: "Sept 2018",
       end: "Nov 2023",
       description:
-        "Managed cross-departmental IT programs aligned with sales and operational goals, producing a 20% customer satisfaction improvement. Improved policies and procedures, and mobilized teams and systems.",
+        "Managed cross-departmental IT programs aligned with sales and operational goals. Improved policies and procedures, and mobilized teams and systems.",
     },
     {
       company: "Jacob K. Javits Convention Center",
